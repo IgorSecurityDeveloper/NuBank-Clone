@@ -21,16 +21,21 @@
       <span>Conta <strong>00000000-0</strong></span>
     </div>
 
-    <ion-list>
-    <ion-items *ngFor="let item of items">
-      <ion-label></ion-label>
-    </ion-items>
-  </ion-list>
+    <ion-list lines="full">
+      <ion-item *ngFor="let item of items" detail>
+        <ion-icon slot="start" [name]="item.icon"></ion-icon>
+        <ion-label>{{ item.text }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-button class="logout" color="light" expand="block" fill="outline">
+      <strong>SAIR DA CONTA</strong>
+    </ion-button>
   </div>
 </ion-content>
 
 <ion-footer class="ion-no-border">
-  <ion-toolbar color="primary">
+  <ion-toolbar color="primary" class="ion-no-border">
     <ion-slides [options]="slidesOptions">
       <ion-slide *ngFor="let option of options">
         <div class="conteiner ion-text-left">

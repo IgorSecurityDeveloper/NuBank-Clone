@@ -37,6 +37,11 @@ ion-content {
         display: block;
       }
     }
+
+    ion-list {
+      margin-top: 32px;
+      background: transparent;
+    }
   }
 }
 
