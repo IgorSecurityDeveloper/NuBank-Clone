@@ -14,9 +14,18 @@
 
 <ion-content class="ion-padding" color="primary">
   <div class="background">
-<div class="bank-information ion-text-center">
-  <img class="qrcode" src="/assets/qrcode.PNG">
-</div>
+    <div class="bank-information ion-text-center">
+      <img class="qrcode" src="/assets/qrcode.PNG">
+      <span>Banco <strong>000 - Nu Pagamentos S.A.</strong></span>
+      <span>Agência <strong>0000</strong></span>
+      <span>Conta <strong>00000000-0</strong></span>
+    </div>
+
+    <ion-list>
+    <ion-items *ngFor="let item of items">
+      <ion-label></ion-label>
+    </ion-items>
+  </ion-list>
   </div>
 </ion-content>
 
